@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FileEncryptApplication",
+            "request": "launch",
+            "mainClass": "com.example.batchprocessing.FileEncryptApplication",
+            "projectName": "batch-processing-initial"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BatchProcessingApplication<batch-processing-initial>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.batchprocessing.BatchProcessingApplication",
+            "projectName": "batch-processing-initial",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

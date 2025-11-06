@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: file-encrypt-batch
+
+  batch:
+    job:
+      enabled: true   # Automatically run job on startup
+    jdbc:
+      initialize-schema: always  # Create batch tables automatically
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:batchdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+logging:
+  level:
+    root: INFO
+    org.springframework.batch: INFO
+    org.springframework.jdbc.core: WARN
+
+app:
+  mode: encrypt
+  input-dir: ./input
+  output-dir: ./output
+  encryption-key: my-secret-password

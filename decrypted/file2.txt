@@ -1,0 +1,2 @@
+Batch jobs are awesome!
+Encrypt me and then decrypt me.

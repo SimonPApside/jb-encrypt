@@ -1,0 +1,2 @@
+Hello Spring Batch!
+This is a test file for AES encryption.
